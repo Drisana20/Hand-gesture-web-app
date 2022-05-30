@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Hand Gesture web app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+    <h1 class="btn btn-warning orange">Hand Gesture web app
+    <br>
+    <span>&#9996;</span>
+    <span>&#128077;</span>
+    <span>&#128078;</span>
+    <span>&#128079;</span>
+    <span>&#128075;</span>
+    </h1>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take a photo of your hand gesture
+      	<br>
+        <b style="color: rgb(13, 0, 255)">Victory</b>
+        <br>
+        <b style="color: rgb(255, 6, 81)">Best</b>
+        <br>
+        <b style="color: rgb(208, 0, 255)">Bad</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View</label>
+        <div id="Camera">
+        </div>
+        <br>
+        <button onclick="takephoto();" class="btn btn-info">Capture</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1</label>
+        <p class="hand_gesture" id="c6"></p>
+        <p class="hand" id="m8"></p>
+        <label>Prediction 2</label>
+        <p class="hand_gesture" id="x4"></p>
+        <p class="hand" id="J9"></p>
+        </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+<div id="S4"></div>
+        <br><br>
+        <button onclick="result();" class="btn btn-info">result</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
